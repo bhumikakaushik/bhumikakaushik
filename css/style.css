@@ -1,67 +1,136 @@
-/*Add padding and margin to space out the page.
-Make the font larger too.*/
 body{
-	margin:1%;
-	font-size:125%;
-}
-
-/*Make the h1 heading bigger with a bold font*/
-h1{
-	font-size: 2em; 
-	font-weight: bold;
-}
-
-.active{
-	background: white;
-    text-transform: uppercase;
-	text-align: center;
-}
-
-.active a{
-	text-decoration: none;;
-}
-
-/*Style the images*/
-img{
-    height: 150px;
-	width:auto;
-    border: 3px solid blue;
-    padding: 25px;
-    border-radius: 20px;
-    margin: 5px;
-	margin-left: 10%
-}
-
-/*Make the h2 heading match h1*/
-h2{
-	font-size: 2em; 
-	font-weight: bold;
-}
-
-/*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
-    padding: 10px;
-}
-
-/*Add borders around the main components and some
-space too*/
-header, nav, main, footer{
-	border: 3px solid red;
-	margin: 10px 0;
+   /* Set line spacing */
+   line-height: 1.5;
 }
 
 
-/*Change the styling for all of the list 
-items in the nav section*/
+header, nav{
+    /* Set padding and margin */
+    margin: 0 auto;
+    padding: 5px 10px;
+    /* justify-content: center; */
+
+}
+
+nav ul{
+    text-align: center;
+}
+
 nav ul li{
-	background-color: #ECFF4D;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    background-color: #FAD56B;
+    padding: 15px 20px;
+    font-size: 25px;
+    margin: auto 120px;
 }
 
-/*Added this so the links stay the same color*/
-a:visited{color:#0000FF}
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+}
 
+a:visited{
+    /* Set color */
+    color: black;
+
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+    text-underline-offset: 8px;
+}
+
+
+h1{
+   /*Set font and font size*/
+   font-family: Merriweather, Anton, “Times New Roman”, monospace ;
+   font-size: 50px;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-family: Anton, “Times New Roman”, monospace ;
+    font-size: 35px;
+    text-align: center;
+}
+
+h3{
+    /*Set font size*/
+    font-size: 30px;
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin-top: 15px;
+}
+
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    display: grid;
+    margin: auto;
+    border-radius: 20px;
+    border: solid gray 1px;
+    grid-template-columns: 30% 30% 30%;
+    row-gap: 10px;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: solid 2px #000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    /* box-shadow: 5px 0px 9px 3px #FFF000; */
+    box-shadow: 5px 0px 5px #D7D9DB;
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */
+    box-shadow: -5px 0px 5px #D7D9DB;
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: 5px 0px 5px #D7D9DB, -5px 0px 5px #D7D9DB;
+}
+
+
+p + p {
+     /* Set indentation */
+     text-indent: 20px;
+  }
+
+p{
+     /* Set margin */
+     margin-top: 8px;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    line-height: 1;
+    margin: 0px 0px 15px 25px;
+    list-style-image: url('../images/sketchbook.png');
+}
