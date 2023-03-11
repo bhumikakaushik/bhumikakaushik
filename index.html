@@ -1,98 +1,62 @@
 <!DOCTYPE html>
+	<!-- Do no make any changes to this file, but you should still review the tags to make sure that you are familiar with them. -->
+
 <html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-
-  <!-- connects to the stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- connect to a Google font -->  
-  <!-- connect to a Font Aweseom font -->
-  <!-- connect to a favicon -->
-  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <title>Women's Web</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/favicon.ico">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>About Me</title>
 </head>
 
+<!-- All of the visible code in the page belongs in the body tag -->
 <body>
-  <a href="#mainstuff" class="skip" tabindex="0"> Skip to Main Content</a>
-  <header>
-    <nav>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Open the menu">
-        <i class="fa fa-bars" aria-hidden="true"></i></a>
-        <ul id="navlinks">
-          <li><a class="active" href="index.html" tabindex="0">About</a></li>
-          <li><a href="literature.html" tabindex="0">Literature</a></li>
-          <li><a href="history.html" tabindex="0">History and Politics</a></li>
-          <li><a href="femdict.html" tabindex="0">Feminist Dictionary</a></li>
-        </ul>
-    </nav>
-    <h1> Woman's Web </h1>
-  </header>
- 
-  <main id="mainstuff">
-    <img src="images/women_march_pano.jpg" width="200" id="women_march" alt="Image of the Ann Arbor Women's March">
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+			<ul>
+				<!-- Since I am on the index file I added class = action to the link to index. -->
+				<!-- For this homework leave the class on index for all three pages. -->
+				<li class="active"><a href = "index.html" >About Me</a></li>
+				<li><a href = "family.html">My Family</a></li>
+				<li><a href = "random.html">Random Stuff</a></li>
+				<li><a href = "http://www.si.umich.edu">UMSI</a></li>
+			</ul>
+		</nav>
+		<!-- The h1 is a semantic tag that aids accessibility -->
+		<h1>Colleen van Lent</h1>
+	</header>
 
-    <div>
-      <p>
-        This website started as an idea when Kelsey Toporski was a freshman in college taking my first <a href="https://lsa.umich.edu/women"> Women's Studies</a> class. As a junior, she had the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really her first introduction to feminism and feminist thought, and she wanted to share her new found knowledge with others. This website is where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. Her hometown may not have been forward thinking, but it did have internet connection.
-      </p>
-      <p>
-        This website currently contains 3 pages other than this one - click below to see a short description of each!
-      </p>
-    </div>
+	<!-- Every page should have a main tag for accessibility -->
+	<main>
+		<p>I am a Lecturer IV in the School of Information at the 
+			University of Michigan. I focus on the introductory 
+			programming courses such as Data-Oriented Programming 
+			(SI 206) and the Web Design Courses (SI 339 and SI 539).</p>
 
-      <h2>Literature</h2>
-      <div>
-        <p>
-          This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
-        </p>
-      </div>
-      <h2>History / Politics</h2>
-      <div>
-        <p>
-          This page features bios of important women in history and women currently in Congress or otherwise politically involved.
-        </p>
-      </div>
-      <h2>Feminist Dictionary</h2>
-      <div>
-        <p>
-          This page features a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms.
-        </p>
-      </div>
+		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
+		<p>
+			I received my BS from <a href = "http://www.kent.edu">Kent State 
+			University</a> Honors College in Computer Science, and an MS 
+			and PhD from the University of Pittsburgh, also in Computer 
+			Science. My thesis was on Artificial Intelligence applications on 
+			the Nursebot Project, a robotic assistant for the elderly.</p>
+		<p>My previous jobs include Associate Professor at 
+			<a href = "http://www.csulb.edu">California State University</a> 
+			and positions at NASA JPL, the Naval Research Lab, and the NSA. 
+		</p>
+	</main>
 
-    <div>
-      <p>
-        <span>Kelsey's DISCLAIMER:</span> I did not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
-      </p>
-    </div>
-  </main>
-  <footer>
-    <p class="thanks">
-      Thanks for visiting! <i class="fa-regular fa-handshake"></i>
-    </p>
-    <p>Original content created by Kelsey Toporski 2019 <i class="fa-regular fa-copyright"></i></p>
-    <a href="#mainstuff">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
-  </footer>
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("navlinks");
-      if (x.style.display === "flex") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "flex";
-      }
-    }
-    </script>
-
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<p>Colleen van Lent &copy; 2023</p>
+	</footer>
 </body>
 </html>
