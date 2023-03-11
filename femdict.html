@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 
   <!-- connects to the stylesheets -->
   <link rel="stylesheet" href="css/reset.css">
@@ -12,18 +11,28 @@
   <!-- connect to a Google font -->  
   <!-- connect to a Font Aweseom font -->
   <!-- connect to a favicon -->
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Women's Web - Dictionary</title>
 </head>
 
 <body>
+  <a href="#mainstuff" class="skip" tabindex="0"> Skip to Main Content</a>
   <header>
     <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="literature.html">Literature</a></li>
-          <li><a href="history.html">History and Politics</a></li>
-          <li><a href="femdict.html">Feminist Dictionary</a></li>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" tabindex="0" aria-label="Open the menu">
+        <i class="fa fa-bars" aria-hidden="true"></i></a>
+        <ul id="navlinks">
+          <li><a class="active" href="index.html" tabindex="0">About</a></li>
+          <li><a href="literature.html" tabindex="0">Literature</a></li>
+          <li><a href="history.html" tabindex="0">History and Politics</a></li>
+          <li><a href="femdict.html" tabindex="0">Feminist Dictionary</a></li>
         </ul>
     </nav>
       <!-- definitions from meriam webster -->
@@ -38,7 +47,7 @@
 
   </header>
 
-  <main>
+  <main id="mainstuff" class="background">
   
 
       <!-- definitions from meriam webster -->
@@ -188,12 +197,20 @@
 
     <footer>
       <p class="thanks">
-        Thanks for visiting! <i class="far fa-grin"></i>
+        Thanks for visiting! <i class="fa-regular fa-handshake"></i>
       </p>
-      <p>Orginal content created by Kelsey Toporski 2019</p>
-
-      <a href="#top" class="tops">Back to Top</a>
+      <p>Original content created by Kelsey Toporski 2019 <i class="fa-regular fa-copyright"></i></p>
+      <a href="#mainstuff" tabindex="0">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
     </footer>
-
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navlinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+      </script>
 </body>
 </html>
